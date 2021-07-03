@@ -87,7 +87,8 @@ CookiesShop.prototype.render = function (){
         totaldaily.textContent=this.totalCookies
         
     }
-    
+
+        
     
 
 
@@ -99,8 +100,9 @@ for (let i = 0; i < array.length; i++) {
     array[i].render();  
 }
 
+
 function makeTotal(){
-let totalRaw=document.createElement('tr');
+    let totalRaw=document.createElement('tr');
 table.appendChild(totalRaw);
 let totalh=document.createElement('th');
 totalRaw.appendChild(totalh);
@@ -121,6 +123,45 @@ for (let i = 0; i < Hours.length; i++) {
 let finalResult=document.createElement('td');
 totalRaw.appendChild(finalResult);
 finalResult.textContent=uppertotal;
+   
+
 
 }
 makeTotal();
+
+
+
+let form=document.getElementById('cookies');
+    form.addEventListener('submit', handler);
+    function handler(event){
+    event.preventDefault();
+    console.log(event.target.name.value);
+    
+    let newlocation=event.target.location.value;
+    let newmin=event.target.min.value;
+    newmin=parseInt(newmin);
+    let newmax=event.target.max.value;
+    newmax=parseInt(newmax);
+    let newavg=event.target.avg.value;
+    newavg=parseFloat(newavg);
+
+    let newshop = new CookiesShop(newlocation, newmin, newmax, newavg);
+    console.log(newshop);
+    newshop.custmsPerHour();
+    newshop.CookiesPerHour();
+    let deleted = table.rows.length - 1;
+    table.deleteRow(deleted);
+    newshop.render();
+    makeTotal();
+
+    }
+
+
+
+
+
+
+    
+
+// let erased = table.rows[6]
+//     table.deleteRow(erased);
