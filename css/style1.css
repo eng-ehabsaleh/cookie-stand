@@ -1,0 +1,25 @@
+table,
+td,
+tr,
+th {
+  border: solid black;
+  background-color: bisque;
+  border: double;
+  font-family: "Fuggles", cursive;
+  font-size: x-large;
+  font-weight: bold;
+}
+body {
+  position: relative;
+}
+header {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+main {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 400px;
+}
