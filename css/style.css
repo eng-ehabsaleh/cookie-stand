@@ -48,7 +48,7 @@ p {
   height: 100px;
   width: 100px;
 } */
-body {
+/* body {
   position: relative;
   margin: 0 auto;
 }
@@ -114,4 +114,113 @@ article {
   right: -70px;
   width: 30%;
   background-color: burlywood;
+} */
+
+header {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+}
+#sal {
+  position: absolute;
+  top: 15px;
+  left: 670px;
+}
+header div p {
+  width: 100%;
+  border-style: solid;
+  border: 3px solid black;
+  border-width: thick;
+  height: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: "Zen Tokyo Zoo";
+}
+
+#li1 {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  text-decoration: none;
+}
+#li2 {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  text-decoration: none;
+}
+#sal {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#d2 {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+main {
+  clear: both;
+  position: relative;
+  background-color: burlywood;
+  height: 900px;
+}
+#art {
+  position: absolute;
+  bottom: 20px;
+  font-family: "Zen Tokyo Zoo";
+  width: 100%;
+}
+#fam {
+  position: absolute;
+  right: 320px;
+}
+main section p {
+  position: absolute;
+  margin: 0 auto;
+  top: 0px;
+  height: 200px;
+  background-color: bisque;
+  border-style: solid;
+  border: 3px solid black;
+  border-width: medium;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#pleft {
+  text-align: center;
+  left: 0px;
+  width: 22.4%;
+}
+#pright {
+  text-align: center;
+  right: 0px;
+  width: 20.6%;
+}
+#leftimg {
+  position: absolute;
+  top: 150px;
+  width: 22.4%;
+}
+#rightimg {
+  position: absolute;
+  width: 20.6%;
+  right: 0px;
+}
+#salmoon {
+  clear: both;
+  position: absolute;
+  top: 500px;
+  right: 450px;
+}
+#chinook {
+  clear: both;
+  position: absolute;
+  top: 400px;
+  left: 1025px;
 }
