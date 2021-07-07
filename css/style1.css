@@ -23,3 +23,6 @@ main {
   top: 100px;
   left: 400px;
 }
+body {
+  background-color: beige;
+}
